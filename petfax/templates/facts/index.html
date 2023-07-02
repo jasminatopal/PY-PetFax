@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <H1>UserFax</H1>
+        {% for fact in facts %}
+            <H4>Submitted by {{ fact.submitter }}</H4>
+            {{ fact.fact }}
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>
